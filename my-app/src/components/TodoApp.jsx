@@ -16,6 +16,17 @@ const TodoApp = () => {
 
     const completeTodo = (id) => {
         console.log(id);
+        const index = todos.findIndex((todo) => todo.id === id);
+        console.log(index);
+        //clone :Do Not Mutate
+        const selectedTodo = { ...todos[index] };
+        console.log(selectedTodo);
+        console.log(selectedTodo.isComplete);
+        selectedTodo.isComplete = !selectedTodo.isComplete;
+        //clone todos
+        const updatedTodos = [...todos];
+        updatedTodos[index] = selectedTodo;
+        setTodos(updatedTodos);
     };
 
     return (
