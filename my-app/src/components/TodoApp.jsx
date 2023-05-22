@@ -3,7 +3,7 @@ import TodoList from "./TodoList";
 import { useState } from "react";
 const TodoApp = () => {
     const [todos, setTodos] = useState([]);
-    
+
     const addTodoHandler = (input) => {
         console.log(input);
         const newTodo = {
@@ -16,7 +16,7 @@ const TodoApp = () => {
     return (
         <div className="container">
             <TodoForm addTodoHandler={addTodoHandler} />
-            <TodoList />
+            <TodoList todos={todos} />
         </div>
     );
 };
