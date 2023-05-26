@@ -34,6 +34,21 @@ const TodoApp = () => {
         const filteredTodos = todos.filter((todo) => todo.id !== id);
         setTodos(filteredTodos);
     };
+
+    const updateTodo = (id, newValue) => {
+        console.log("injam");
+        const index = todos.findIndex((todo) => todo.id === id);
+
+        //clone :Do Not Mutate
+        const selectedTodo = { ...todos[index] };
+
+        selectedTodo.text = newValue;
+        //clone todos
+        const updatedTodos = [...todos];
+        updatedTodos[index] = selectedTodo;
+        setTodos(updatedTodos);
+    };
+
     return (
         <div className="container">
             <TodoForm addTodoHandler={addTodoHandler} />
@@ -41,6 +56,7 @@ const TodoApp = () => {
                 todos={todos}
                 onComplete={completeTodo}
                 onDelete={removeTodo}
+                onUpdateTodo={updateTodo}
             />
         </div>
     );
