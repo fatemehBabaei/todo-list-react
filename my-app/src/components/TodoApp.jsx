@@ -50,7 +50,7 @@ const TodoApp = () => {
     };
 
     return (
-        <div className="container">
+        <div className=" card max-w-[600px] bg-purple mx-auto mt-20 p-10">
             <TodoForm addTodoHandler={addTodoHandler} />
             <TodoList
                 todos={todos}

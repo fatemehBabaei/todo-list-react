@@ -1,6 +1,7 @@
 import Todo from "./Todo";
 import { useState } from "react";
 import TodoForm from "./TodoForm";
+import imf from "../img/check-list.png";
 
 const TodoList = ({ todos, onComplete, onDelete, onEdit, onUpdateTodo }) => {
     const [edit, setEdit] = useState({
@@ -16,7 +17,8 @@ const TodoList = ({ todos, onComplete, onDelete, onEdit, onUpdateTodo }) => {
     };
 
     const renderTodoList = () => {
-        if (todos.length === 0) return <p>add some todos</p>;
+        if (todos.length === 0) return <img className=" max-w-250 mx-auto mt-10" src={imf} />;
+        // <p>add some todos</p>;
         return todos.map((todo) => {
             return (
                 <Todo
