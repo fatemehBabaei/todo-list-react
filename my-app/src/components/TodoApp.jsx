@@ -50,14 +50,18 @@ const TodoApp = () => {
     };
 
     return (
-        <div className=" card max-w-[600px] bg-purple mx-auto mt-20 p-10">
-            <TodoForm addTodoHandler={addTodoHandler} />
-            <TodoList
-                todos={todos}
-                onComplete={completeTodo}
-                onDelete={removeTodo}
-                onUpdateTodo={updateTodo}
-            />
+        <div className="">
+            <div className="max-w-[600px] bg-purple  mt-20 p-10  card mx-auto ">
+                <TodoForm addTodoHandler={addTodoHandler} />
+                <div className="card mt-3 p-5">
+                    <TodoList
+                        todos={todos}
+                        onComplete={completeTodo}
+                        onDelete={removeTodo}
+                        onUpdateTodo={updateTodo}
+                    />
+                </div>
+            </div>
         </div>
     );
 };

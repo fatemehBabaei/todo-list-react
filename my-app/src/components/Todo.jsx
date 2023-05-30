@@ -2,7 +2,7 @@ import { BiTrash, BiEditAlt, BiCheckDouble } from "react-icons/bi";
 
 const Todo = ({ todo, onComplete, onDelete, onEdit }) => {
     return (
-        <div className="flex justify-between items-center mt-10">
+        <div className="flex justify-between items-center mt-2 card-item ">
             <div>{todo.text}</div>
             <div>
                 <button

@@ -17,7 +17,7 @@ const TodoList = ({ todos, onComplete, onDelete, onEdit, onUpdateTodo }) => {
     };
 
     const renderTodoList = () => {
-        if (todos.length === 0) return <img className=" max-w-250 mx-auto mt-10" src={imf} />;
+        // if (todos.length === 0) return <img className=" max-w-250 mx-auto mt-10" src={imf} />;
         // <p>add some todos</p>;
         return todos.map((todo) => {
             return (

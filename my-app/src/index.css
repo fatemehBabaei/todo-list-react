@@ -3,4 +3,35 @@
 @tailwind utilities;
 body > #root > div {
     height: 100vh;
+    min-height: 100%;
+    background-image: url("./img/bg-arsham.png");
+    background-size: cover;
+    background-position: top center;
+}
+input {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: -5px 6px 28px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(3px);
+    color: #000;
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 40px;
+}
+.form {
+    width: 100%;
+}
+.card-item {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: -5px 6px 28px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(3px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+    padding: 10px;
+    color: #000;
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
