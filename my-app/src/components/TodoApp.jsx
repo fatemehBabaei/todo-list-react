@@ -36,7 +36,6 @@ const TodoApp = () => {
     };
 
     const updateTodo = (id, newValue) => {
-        console.log("injam");
         const index = todos.findIndex((todo) => todo.id === id);
 
         //clone :Do Not Mutate
@@ -51,9 +50,13 @@ const TodoApp = () => {
 
     return (
         <div className="">
-            <div className="max-w-[600px] bg-purple  mt-20 p-10  card mx-auto ">
+            <div className="max-w-[600px] mt-20 p-10 card mx-auto ">
                 <TodoForm addTodoHandler={addTodoHandler} />
-                <div className="card mt-3 p-5">
+                <div
+                    className={` card mt-3  ${todos.length > 0 ? "p-3 " : ""} ${
+                        todos.length > 3 ? "h-[250px] overflow-y-scroll " : ""
+                    }  `}
+                >
                     <TodoList
                         todos={todos}
                         onComplete={completeTodo}
@@ -65,5 +68,4 @@ const TodoApp = () => {
         </div>
     );
 };
-
 export default TodoApp;

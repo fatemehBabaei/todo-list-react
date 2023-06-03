@@ -21,13 +21,15 @@ const TodoList = ({ todos, onComplete, onDelete, onEdit, onUpdateTodo }) => {
         // <p>add some todos</p>;
         return todos.map((todo) => {
             return (
-                <Todo
-                    todo={todo}
-                    key={todo.id}
-                    onComplete={() => onComplete(todo.id)}
-                    onDelete={() => onDelete(todo.id)}
-                    onEdit={() => setEdit(todo)}
-                />
+                <div className="">
+                    <Todo
+                        todo={todo}
+                        key={todo.id}
+                        onComplete={() => onComplete(todo.id)}
+                        onDelete={() => onDelete(todo.id)}
+                        onEdit={() => setEdit(todo)}
+                    />
+                </div>
             );
         });
     };

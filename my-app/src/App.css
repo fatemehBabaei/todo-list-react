@@ -1,19 +1,19 @@
 .card {
     max-width: 617px;
-    /* height: 643px; */
-    /* position: absolute; */
-    /* left: calc(50% - 617px / 2); */
-    /* top: calc(50% - 643px / 2 - 54px); */
+
     background: rgba(255, 255, 255, 0.3);
     box-shadow: -5px 6px 28px rgba(0, 0, 0, 0.12);
     backdrop-filter: blur(3px);
-    /* Note: backdrop-filter has minimal browser support */
 
-    border-radius: 40px;
+    border-radius: 20px;
+}
 
-    /* background: rgba(255, 255, 255, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.7px);
-    -webkit-backdrop-filter: blur(2.7px); */
+.btn-submit {
+    background: rgba(0, 96, 240, 0.6);
+    box-shadow: -5px 6px 28px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(3px);
+
+    border-radius: 20px;
+    width: 60px;
+    aspect-ratio: 1;
 }

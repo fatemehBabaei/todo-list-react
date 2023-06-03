@@ -20,9 +20,9 @@ const TodoForm = (props) => {
     };
 
     return (
-        <form className="form max-w-[600] flex" onSubmit={submitHandler}>
+        <form className="form max-w-[600] flex gap-3" onSubmit={submitHandler}>
             <input
-                className="input w-full  outline-none  p-3 rounded-r"
+                className="w-full  outline-none sm:pl-2  lg:pl-4 "
                 type="text"
                 value={input}
                 onChange={changeHandler}
@@ -30,7 +30,7 @@ const TodoForm = (props) => {
             />
             <button
                 type="submit"
-                className="btn input-bordered btn-primary rounded-l p-4"
+                className="  btn-submit"
             >
                 {props.edit ? "update" : "+"}
             </button>
