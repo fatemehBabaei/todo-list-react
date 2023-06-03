@@ -12,9 +12,9 @@ body > #root {
 } */
 body > #root > div {
     height: 100vh;
-    
+
     min-height: 100%;
-    /* background-image: url("./img/bg-arsham.png"); */
+    background-image: url("./img/bg-arsham.png");
     background-size: cover;
     background-position: top center;
 }
