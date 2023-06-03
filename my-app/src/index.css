@@ -23,8 +23,6 @@ input {
     box-shadow: -5px 6px 28px rgba(0, 0, 0, 0.12);
     backdrop-filter: blur(3px);
     color: #000;
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 20px;
 }
 .form {
