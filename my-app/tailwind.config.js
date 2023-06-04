@@ -16,12 +16,22 @@ module.exports = {
                 600: "600px",
                 800: "800px",
             },
+            borderRadius: {
+                main: "20px",
+            },
             height: {
                 250: "250px",
+            },
+            backdropBlur: {
+                3: "3px",
+            },
+            boxShadow: {
+                main: "-5px 6px 28px rgba(0, 0, 0, 0.12)",
             },
             colors: {
                 purple: "#3f3cbb",
                 primary: "#121023",
+                grayMain: "rgba(255, 255, 255, 0.2)",
             },
         },
     },
