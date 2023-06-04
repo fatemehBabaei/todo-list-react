@@ -1,7 +1,6 @@
 import Todo from "./Todo";
 import { useState } from "react";
 import TodoForm from "./TodoForm";
-import imf from "../img/check-list.png";
 
 const TodoList = ({ todos, onComplete, onDelete, onEdit, onUpdateTodo }) => {
     const [edit, setEdit] = useState({
@@ -13,7 +12,6 @@ const TodoList = ({ todos, onComplete, onDelete, onEdit, onUpdateTodo }) => {
     const editTodo = (newValue) => {
         onUpdateTodo(edit.id, newValue);
         setEdit({ id: null, text: "" });
-        // onUpdateTodo(edit.id);
     };
 
     const renderTodoList = () => {
