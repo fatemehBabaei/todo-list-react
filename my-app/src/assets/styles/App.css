@@ -16,3 +16,11 @@
     width: 60px;
     aspect-ratio: 1;
 }
+::-webkit-scrollbar {
+    width: 5px;
+    height: 90%;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 96, 240);
+    border-radius: 40px;
+}
