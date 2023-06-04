@@ -50,10 +50,10 @@ const TodoApp = () => {
 
     return (
         <div className="">
-            <div className="max-w-[600px] mt-20 p-10 card mx-auto ">
+            <div className="max-w-[600px] mt-20 p-2 sm:p-10 card mx-auto ">
                 <TodoForm addTodoHandler={addTodoHandler} />
                 <div
-                    className={` card mt-3  ${todos.length > 0 ? "p-3 " : ""} ${
+                    className={` card  ${todos.length > 0 ? "mt-3  p-3 " : ""} ${
                         todos.length > 3 ? "h-[250px] overflow-y-scroll " : ""
                     }  `}
                 >

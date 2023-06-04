@@ -20,7 +20,7 @@ const TodoForm = (props) => {
     };
 
     return (
-        <form className="form max-w-[600] flex gap-3" onSubmit={submitHandler}>
+        <form className="form max-w-[600] flex gap-3  " onSubmit={submitHandler}>
             <input
                 className="w-full  outline-none sm:pl-2  lg:pl-4 "
                 type="text"
