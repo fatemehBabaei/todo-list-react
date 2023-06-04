@@ -1,13 +1,13 @@
 // import logo from "./logoserve.svg";
-import "./App.css";
-import "./index.css";
+import "./assets/styles/App.css";
+import "./assets/styles/index.css";
 import TodoApp from "./components/TodoApp";
 
 function App() {
     return (
-        <div className=" h-full w-full text-white  ">
-            <h1 className="text-center pt-20">Fatemeh todo list</h1>
+        <div className=" pt-20 flex flex-col  a h-full w-full text-white bg-bottom-left sm:bg-right md:bg-top  ">
             <TodoApp />
+            <h1 className="text-center font-['JosefinSans'] font-semibold text-3xl">Fateme Babaei <br></br> Do list</h1>
         </div>
     );
 }

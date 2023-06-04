@@ -3,6 +3,9 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
         extend: {
+            fontFamily: {
+                Josefin: ["JosefinSans"],
+            },
             maxWidth: {
                 250: "250px",
                 500: "500px",

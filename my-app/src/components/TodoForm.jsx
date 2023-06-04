@@ -25,7 +25,7 @@ const TodoForm = (props) => {
             onSubmit={submitHandler}
         >
             <input
-                className="w-full  outline-none sm:pl-2  lg:pl-4 shadow-[-5px 6px 28px rgba(0, 0, 0, 0.12)] bg-grayMain  backdrop-blur-[3px]  rounded-[20px] "
+                className="w-full font-['JosefinSans'] font-medium text-xl outline-none sm:pl-2  lg:pl-4 shadow-[-5px 6px 28px rgba(0, 0, 0, 0.12)] bg-grayMain  backdrop-blur-[3px]  rounded-[20px] "
                 type="text"
                 value={input}
                 onChange={changeHandler}

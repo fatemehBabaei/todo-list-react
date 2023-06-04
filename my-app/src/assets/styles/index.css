@@ -1,13 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: "JosefinSans";
+    src: url("../fonts/Josefin_Sans/JosefinSans-Regular.ttf");
+}
 body > #root > div {
     height: 100vh;
 
     min-height: 100%;
-    background-image: url("./img/bg-arsham.png");
-    background-size: cover;
-    background-position: top center;
+    background-image: url("../../img/bg-arsham.png");
+    /* background-size: cover; */
+    /* background-position: top center; */
 }
 input {
     /* background: rgba(255, 255, 255, 0.2); */
@@ -25,6 +29,6 @@ input {
 html,
 body {
     height: 100%;
-  
+
     /* background-color: #5d2de0; */
 }

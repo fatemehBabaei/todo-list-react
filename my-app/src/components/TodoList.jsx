@@ -23,6 +23,7 @@ const TodoList = ({ todos, onComplete, onDelete, onEdit, onUpdateTodo }) => {
             return (
                 <div className="">
                     <Todo
+                      
                         todo={todo}
                         key={todo.id}
                         onComplete={() => onComplete(todo.id)}
